@@ -18,7 +18,7 @@
 html,
 body {
     width: 100%;
-    height: auto;
+    height: 1540px;
     font-size: 62.5%;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
@@ -104,21 +104,42 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+    html,
+    body {
+        height: 100%;
+    }
+
+    main {
+        width: 900px;
+        height: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
     .sedans_button:hover {
         color: var(--verylightgray);
         background-color: var(--brightorange);
-        border: 1px solid var(--verylightgray);
+        border: 2px solid var(--verylightgray);
     }
     
     .suvs_button:hover {
         color: var(--verylightgray);
         background-color: var(--darkcyan);
-        border: 1px solid var(--verylightgray);
+        border: 2px solid var(--verylightgray);
     }
     
     .luxury_button:hover {
         color: var(--verylightgray);
         background-color: var(--verydarkcyan);
-        border: 1px solid var(--verylightgray);
+        border: 2px solid var(--verylightgray);
+    }
+
+    .luxury {
+        border-radius: 0 10px 10px 0;
     }
 }
